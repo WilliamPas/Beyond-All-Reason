@@ -1827,8 +1827,8 @@ local unitGrids = {
 		},
 		{
 			{"corlab", "corvp", "corap", "corsy", },
-			{"cornanotc", "coraap", "", "", },
-			{"", "corhaap", "", "", },
+			{"corhaap", "coraap", "", "", },
+			{"", "", "", "", },
 		},
 	},
 	
@@ -1850,8 +1850,8 @@ local unitGrids = {
 		},
 		{
 			{ "armlab", "armvp", "armap", "armsy", },                                      -- T1 lab,
-			{ "armnanotc", "armalab", "", "",},                         -- T3 lab, T2 lab
-			{ "", "armhalab", "", "" },                                                --
+			{ "armhalab", "armalab", "", "",},                         -- T3 lab, T2 lab
+			{ "", "", "", "" },                                                --
 		}
 	},
 
@@ -1873,8 +1873,8 @@ local unitGrids = {
 		},
 		{
 			{"corlab", "corvp", "corap", "corsy", },
-			{"cornanotc", "coralab", "", "", },
-			{"", "corhalab", "", "", },
+			{"corhalab", "coralab", "", "", },
+			{"", "", "", "", },
 		},
 	},
 
@@ -1919,8 +1919,8 @@ local unitGrids = {
 		},
 		{
 			{ "armlab", "armvp", "armap", "armsy", },                                      -- T1 lab,
-			{ "armnanotc", "armavp", "", "",},                         -- T3 lab, T2 lab
-			{ "", "armhavp", "", "" },                                                --
+			{ "armhalab", "armalab", "", "",},                         -- T3 lab, T2 lab
+			{ "", "", "", "" },                                                --
 		}
 	},
 
@@ -1942,8 +1942,8 @@ local unitGrids = {
 		},
 		{
 			{"corlab", "corvp", "corap", "corsy", },
-			{"cornanotc", "coravp", "", "", },
-			{"", "corhavp", "", "", },
+			{"corhavp", "coravp", "", "", },
+			{"", "", "", "", },
 		},
 	},
 
@@ -1988,8 +1988,8 @@ local unitGrids = {
 		},
 		{
 			{ "armlab", "armvp", "armap", "armsy", },                                      -- T1 lab,
-			{ "armnanotcplat", "armasy", "", "",},                         -- T3 lab, T2 lab
-			{ "", "armhasy", "", "" },                                                --
+			{ "armhasy", "armasy", "", "",},                         -- T3 lab, T2 lab
+			{ "", "", "", "" },                                                --
 		}
 	},
 
@@ -2011,8 +2011,8 @@ local unitGrids = {
 		},
 		{
 			{"corlab", "corvp", "corap", "corsy", },
-			{"cornanotcplat", "corasy", "", "", },
-			{"", "corhasy", "", "", },
+			{"corhasy", "corasy", "", "", },
+			{"", "", "", "", },
 		},
 	},
 
@@ -2546,7 +2546,7 @@ if Spring.GetModOptions().techsplit then
 		{
 			{ "armlab", "armvp", "armap", "armsy", },         -- bot lab, veh lab, air lab, shipyard
 			{ "armnanotc", "armaap", "", "", },                      -- nano, T2 lab
-			{ "", "", },                                     -- hover lab, floating hover lab, amphibious lab, seaplane lab
+			{ "", },                                     -- hover lab, floating hover lab, amphibious lab, seaplane lab
 		}
 	}
 	
@@ -2557,7 +2557,7 @@ if Spring.GetModOptions().techsplit then
 			{ "armestor", "armmstor", "", "", },
 		},
 		{
-			{ "armbeamer", "armhlt", "armpb", "armguard", },
+			{ "armbeamer", "armhlt", "armclaw", "armguard", },
 			{ "armferret", "armcir", "", "", },
 			{ "armdl", "armjuno", "", "", },
 		},
@@ -2568,8 +2568,8 @@ if Spring.GetModOptions().techsplit then
 		},
 		{
 			{ "armlab", "armvp", "armap", "armsy", },         -- bot lab, veh lab, air lab, shipyard
-			{ "armnanotc", "armalab", "", "", },                      -- nano, T2 lab
-			{ "", "armhalab" },                                     -- hover lab, floating hover lab, amphibious lab, seaplane lab
+			{ "armhalab", "armalab", "", "", },                      -- nano, T2 lab
+			{ "", "" },                                     -- hover lab, floating hover lab, amphibious lab, seaplane lab
 		}
 	}
 
@@ -2580,7 +2580,7 @@ if Spring.GetModOptions().techsplit then
 			{ "armestor", "armmstor", "", "", },
 		},
 		{
-			{ "armbeamer", "armhlt", "armpb", "armguard", },
+			{ "armbeamer", "armhlt", "armclaw", "armguard", },
 			{ "armferret", "armcir", "", "", },
 			{ "armdl", "armjuno", "", "", },
 		},
@@ -2591,8 +2591,8 @@ if Spring.GetModOptions().techsplit then
 		},
 		{
 			{ "armlab", "armvp", "armap", "armsy", },         -- bot lab, veh lab, air lab, shipyard
-			{ "armnanotc", "armavp", "", "", },                      -- nano, T2 lab
-			{ "", "armhavp" },                                     -- hover lab, floating hover lab, amphibious lab, seaplane lab
+			{ "armhavp", "armavp", "", "", },                      -- nano, T2 lab
+			{ "", "" },                                     -- hover lab, floating hover lab, amphibious lab, seaplane lab
 		}
 	}
 
@@ -2603,7 +2603,7 @@ if Spring.GetModOptions().techsplit then
 			{ "armestor", "armmstor", "", "", },
 		},
 		{
-			{ "armbeamer", "armhlt", "armpb", "armguard", },
+			{ "armbeamer", "armhlt", "armclaw", "armguard", },
 			{ "armferret", "armcir", "", "", },
 			{ "armdl", "armtl", "armjuno", "", },
 		},
@@ -2614,8 +2614,8 @@ if Spring.GetModOptions().techsplit then
 		},
 		{
 			{ "armlab", "armvp", "armap", "armsy", },         -- bot lab, veh lab, air lab, shipyard
-			{ "armnanotc", "armavp", "armhaapuw", "armasy", },                      -- nano, T2 lab
-			{ "", "armhavp", "", "armhasy", },                                     -- hover lab, floating hover lab, amphibious lab, seaplane lab
+			{ "armalab", "armavp", "armhaapuw", "armasy", },                      -- nano, T2 lab
+			{ "armnanotc", "armhavp", "", "armhasy", },                                     -- hover lab, floating hover lab, amphibious lab, seaplane lab
 		}
 	}
 
@@ -2626,7 +2626,7 @@ if Spring.GetModOptions().techsplit then
 			{ "armestor", "armmstor", "", "", },
 		},
 		{
-			{ "armbeamer", "armhlt", "armpb", "armguard", },
+			{ "armbeamer", "armhlt", "armclaw", "armguard", },
 			{ "armferret", "armcir", "", "", },
 			{ "armdl", "armjuno", "", "", },
 		},
@@ -2637,8 +2637,8 @@ if Spring.GetModOptions().techsplit then
 		},
 		{
 			{ "armlab", "armvp", "armap", "armsy", },         -- bot lab, veh lab, air lab, shipyard
-			{ "armnanotc", "armaap", "", "", },                      -- nano, T2 lab
-			{ "", "armhaap" },                                     -- hover lab, floating hover lab, amphibious lab, seaplane lab
+			{ "armhaap", "armaap", "", "", },                      -- nano, T2 lab
+			{ "", "" },                                     -- hover lab, floating hover lab, amphibious lab, seaplane lab
 		}
 	}
 
@@ -2651,7 +2651,7 @@ if Spring.GetModOptions().techsplit then
 		{
 			{ "armatl", "armfhlt", "armkraken", },                        -- adv torp launcher, floating heavy platform
 			{ "armfrt", "armferret", "armcir", },                                   -- floating flak
-			{"armpb", "armguard",},                                               --
+			{"armclaw", "armguard",},                                               --
 		},
 		{
 			{ "armason", "armfdrag", },                		   -- adv sonar, floating targeting facility
@@ -2660,8 +2660,8 @@ if Spring.GetModOptions().techsplit then
 		},
 		{
 			{ "armlab", "armvp", "armap", "armsy", },         -- bot lab, veh lab, air lab, shipyard
-			{ "armnanotcplat", "armasy", "", "", },                      -- nano, T2 lab
-			{ "", "armhasy" },                                     -- hover lab, floating hover lab, amphibious lab, seaplane lab
+			{ "armhasy", "armasy", "", "", },                      -- nano, T2 lab
+			{ "", "" },                                     -- hover lab, floating hover lab, amphibious lab, seaplane lab
 		}
 	}
 
@@ -2788,7 +2788,7 @@ if Spring.GetModOptions().techsplit then
 			{"corestor","cormstor","","",},
 		},
 		{
-			{"corhllt","corhlt","corvipe","corpun",},
+			{"corhllt","corhlt","cormaw","corpun",},
 			{"cormadsam","corerad","","",},
 			{"cordl","corjuno","","",},
 		},
@@ -2799,8 +2799,8 @@ if Spring.GetModOptions().techsplit then
 		},
 		{
 			{"corlab","corvp","corap","corsy",},
-			{"cornanotc","coralab","","",},
-			{"","corhalab","","",},
+			{"corhalab","coralab","","",},
+			{"","","","",},
 		},
 	}
 
@@ -2811,7 +2811,7 @@ if Spring.GetModOptions().techsplit then
 			{"corestor","cormstor","","",},
 		},
 		{
-			{"corhllt","corhlt","corvipe","corpun",},
+			{"corhllt","corhlt","cormaw","corpun",},
 			{"cormadsam","corerad","","",},
 			{"cordl","corjuno","","",},
 		},
@@ -2822,8 +2822,8 @@ if Spring.GetModOptions().techsplit then
 		},
 		{
 			{"corlab","corvp","corap","corsy",},
-			{"cornanotc","coravp","","",},
-			{"","corhavp","","",},
+			{"corhavp","coravp","","",},
+			{"","","","",},
 		},
 	}
 
@@ -2834,7 +2834,7 @@ if Spring.GetModOptions().techsplit then
 			{"corestor","cormstor","","",},
 		},
 		{
-			{"corhllt","corhlt","corvipe","corpun",},
+			{"corhllt","corhlt","cormaw","corpun",},
 			{"cormadsam","corerad","","",},
 			{"cordl","cortl","corjuno","",},
 		},
@@ -2845,8 +2845,8 @@ if Spring.GetModOptions().techsplit then
 		},
 		{
 			{"corlab","corvp","corap","corsy",},
-			{"cornanotc","coravp","corhaapuw","corasy",},
-			{"","corhavp","","",},
+			{"coralab","coravp","corhaapuw","corasy",},
+			{"cornanotc","corhavp","","",},
 		},
 	}
 
@@ -2857,7 +2857,7 @@ if Spring.GetModOptions().techsplit then
 			{"corestor","cormstor","","",},
 		},
 		{
-			{"corhllt","corhlt","corvipe","corpun",},
+			{"corhllt","corhlt","cormaw","corpun",},
 			{"cormadsam","corerad","","",},
 			{"cordl","corjuno","","",},
 		},
@@ -2868,8 +2868,8 @@ if Spring.GetModOptions().techsplit then
 		},
 		{
 			{"corlab","corvp","corap","corsy",},
-			{"cornanotc","coraap","","",},
-			{"","corhaap","","",},
+			{"corhaap","coraap","","",},
+			{"","","","",},
 		},
 	}
 
@@ -2882,7 +2882,7 @@ if Spring.GetModOptions().techsplit then
 		{
 			{ "coratl", "corfhlt", },                         -- adv torp launcher, floating heavy platform
 			{ "corfrl", "cormadsam", "corerad", },                                    -- floating flak
-			{ "corpun", "corvipe" },                                               --
+			{ "corpun", "" },                                               --
 		},
 		{
 			{ "corason", "corfdrag", "corarad", "corshroud", },                         -- adv sonar, floating targeting facility
@@ -2890,18 +2890,12 @@ if Spring.GetModOptions().techsplit then
 		},
 		{
 			{"corlab","corvp","corap","corsy",},
-			{"cornanotcplat", "corasy", "", "",},
-			{"","corhasy","","",},
+			{"corhasy", "corasy", "", "",},
+			{"","","","",},
 		},
 	}
 
 	-- Lab Grids
-
-	labGrids["armlab"] = {
-		"armck", "armrectr", "armpw", "armflea",                -- T1 con, rez bot, peewee, flea
-		"armrock", "armwar", "armham", "",                     -- rocko, hammer, warrior
-		"", "", "armjeth",  
-	}
 
 	labGrids["armvp"] = {
 		"armcv", "armmlv", "armflash", "armfav",        -- T1 con, minelayer, flash, scout
